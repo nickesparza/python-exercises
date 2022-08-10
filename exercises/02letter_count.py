@@ -26,3 +26,14 @@
 # letter_count('banana')
 #
 # > {'a': 3, 'b': 1, 'n': 2}
+
+def letter_count(string):
+    totals = {}
+    for letter in string:
+        if letter in totals:
+            totals[letter] += 1
+        else:
+            totals[letter] = 1
+    print(totals)
+
+letter_count("bananas")
